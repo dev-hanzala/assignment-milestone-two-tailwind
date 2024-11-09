@@ -1,101 +1,43 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold">Welcome to My Website</h1>
+      <p className="my-4">
+        I built this website with Next.js, a powerful React-based framework.
+      </p>
+      <p className="my-4">
+        Next.js allows for server-side rendering, enabling faster page loads by pre-rendering pages on the server.
+      </p>
+      <p className="my-4">
+        With Next.js, you can create dynamic, robust applications effortlessly. It&aps;s developed by Vercel, ensuring top-notch performance.
+      </p>
+      <p className="my-4">
+        This website showcases various features of Next.js, including static site generation, API routes, and more.
+      </p>
+      <h2 className="text-2xl font-bold mt-8">What is Tailwind CSS?</h2>
+      <p className="my-4">
+        Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. It is different from frameworks like Bootstrap and Bulma, because it doesn&apos;t come with a pre-designed set of UI components.
+      </p>
+      <p className="my-4">
+        Tailwind is a utility-first framework, meaning it is best used when you are building a site from scratch. You can use Tailwind to generate code for your HTML, CSS and JavaScript based on a set of simple classes that you add to your HTML.
+      </p>
+      <p className="my-4">
+        Tailwind is a set of pre-defined classes that you can use to style your HTML. It is a very powerful tool for creating consistent styling across your site, and can be used to generate code for your HTML, CSS and JavaScript.
+      </p>
+      <h2 className="text-2xl font-bold mt-8">What is React?</h2>
+      <p className="my-4">
+        React is a JavaScript library for building user interfaces. It is a component-based library, meaning it allows you to build your UI by combining smaller components.
+      </p>
+      <p className="my-4">
+        React is a powerful tool for building web applications, and is used by many popular websites, including Facebook and Instagram.
+      </p>
+      <h2 className="text-2xl font-bold mt-8">What is CSS Modules?</h2>
+      <p className="my-4">
+        CSS Modules is a feature that allows you to import CSS files into your JavaScript modules. This allows you to scope CSS to a particular component, and avoid having to worry about class name conflicts.
+      </p>
+      <p className="my-4">
+        CSS Modules is a powerful tool for managing your CSS, and is used by many popular frameworks, including Next.js.
+      </p>
     </div>
   );
 }
